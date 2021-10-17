@@ -22,9 +22,15 @@
 The second question was answered by first creating two scatter plots: vaccine doses versus deaths; and GPD versus deaths. This was used to quickly look for a correlation between variables in addition to using a heatmap that displayed the correlation coefficient between all variables present in the dataset. The next step was to develop a linear regression to further explore and visualize the relationship of vaccine doses and deaths. The hypothesis was that as the number of vaccine doses increased, the number of deaths would decrease, showing an inverse relationship between the two variables. Given the small size of the dataset, a linear regression was created using 70% of the data as the training set and ordinary least squares method (OLS) to formulate an equation that could be used to predict deaths given vaccine doses.  After the regression was created, a residual analysis was performed to check if the error was normally distributed, and that the regression could be used for predictions.
 
 ## Results
-
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Active%20Covid%20Cases%20Above%2050th%20Percentile.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Covid%20Death%20Ratio%20Above%2050th%20Percentile.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Covid%20Deaths%20Above%2050th%20Percentile.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Total%20Cases%20Above%2050th%20Percentile.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Correlation%20coefficient%20heatmap.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Training%20Linear%20Regression%20Plotted.png)
+![alt text](https://github.com/lazyrandy/EDA-Indian-Covid-Data/blob/main/graphs/Error%20Terms%20Visualized.png)
 ## Conlclusion
-Based on the bar charts created, the three states of interest are Maharashtra, Kerala, Punjab. The direct correlation between vaccine doses and deaths is not very high, and the regression should not be used as an indicator of deaths within a state. This suggests there are several variables that affect the number of deaths within a single Indian state, and is better represented by a multivariable regression.
+Based on the bar charts created, the three states of interest are Maharashtra, Kerala, Punjab. The direct correlation between vaccine doses and deaths is not very high, and the regression should not be used as an indicator of deaths within a state. This suggests there are several variables that affect the number of deaths within a single Indian state, and is better represented by a multivariable regression. Additionally, the error terms analysis shows that the error for this study is not normally distrubtued further support a multivariable model for death prediction.
 
 ## Discussion
 In future studies, additional environmental factors should be considered such as clean water availability, population density, and average age of the population. This would allow for a more robust model that could better capture the relationship between independent and dependent variables. 
